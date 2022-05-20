@@ -12,26 +12,11 @@ header {
   font-family: Helvetica, sans-serif;
   text-align: left;
   justify-content: center;
-  font-size: 40px;
-  padding: 80px; }
+  padding: 80px;
+  font-size: 40px; }
 
 /* Ultimos releases */
-#worlds-unseen {
-  font-family: Arial, Helvetica, sans-serif;
-  color: whitesmoke;
-  text-align: center; }
-
-#endless-road {
-  font-family: Arial, Helvetica, sans-serif;
-  color: whitesmoke;
-  text-align: center; }
-
-#set {
-  font-family: Arial, Helvetica, sans-serif;
-  color: whitesmoke;
-  text-align: center; }
-
-.latest {
+#worlds-unseen, #endless-road, #set, .latest, #tpas2, #tpas1 {
   font-family: Arial, Helvetica, sans-serif;
   color: whitesmoke;
   text-align: center; }
@@ -39,8 +24,8 @@ header {
 /* BIOGRAFIA */
 .titulobio {
   padding: 15px;
-  font-family: Helvetica, sans-serif;
   font-size: 20px;
+  font-family: Helvetica, sans-serif;
   color: aliceblue;
   text-align: center; }
 
@@ -99,8 +84,8 @@ footer {
 /* EVENTOS */
 .titulo-eventos {
   padding: 15px;
-  font-family: Helvetica, sans-serif;
   font-size: 20px;
+  font-family: Helvetica, sans-serif;
   color: aliceblue;
   text-align: center; }
 
@@ -163,37 +148,21 @@ footer {
 .foto-lateral:hover {
   transform: scale(0.9); }
 
-#worlds-unseen {
+#worlds-unseen, #endless-road, #set, .latest, #tpas2, #tpas1 {
   transition-property: all;
   transition-duration: .5s; }
 
-#worlds-unseen:hover {
+#worlds-unseen:hover, #endless-road:hover, #set:hover, .latest:hover, #tpas2:hover, #tpas1:hover {
   transform: scale(1.5); }
-
-#endless-road {
-  transition-property: all;
-  transition-duration: .5s; }
 
 #endless-road:hover {
   transform: scale(1.5); }
 
-#set {
-  transition-property: all;
-  transition-duration: .5s; }
-
 #set:hover {
   transform: scale(1.5); }
 
-#tpas2 {
-  transition-property: all;
-  transition-duration: .5s; }
-
 #tpas2:hover {
   transform: scale(1.5); }
-
-#tpas1 {
-  transition-property: all;
-  transition-duration: .5s; }
 
 #tpas1:hover {
   transform: scale(1.5); }

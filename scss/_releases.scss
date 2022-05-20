@@ -1,4 +1,7 @@
 /* Ultimos releases */
+
+
+// Usos del EXTEND
 #worlds-unseen{
     font-family: $fuente-principal;
     color: $color-texto;
@@ -6,20 +9,15 @@
 }
 
 #endless-road{
-    font-family: $fuente-principal;
-    color: $color-texto;
-    text-align: center;
+    @extend #worlds-unseen;
 }
 
 #set{
-    font-family: $fuente-principal;
-    color: $color-texto;
-    text-align: center;
+    @extend #worlds-unseen;
+    
 }
 .latest{
-    font-family: $fuente-principal;
-    color: $color-texto;
-    text-align: center;
+    @extend #worlds-unseen;
 }
 
 

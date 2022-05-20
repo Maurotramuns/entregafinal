@@ -1,19 +1,37 @@
 // Variables
-
 $color-texto: whitesmoke;
 $color-titulos: aliceblue;
 $fuente-principal: Arial, Helvetica, sans-serif;
 
-// Imports
+// MAP
+
+$coloresfondo: (
+    fondo1:  #060606,
+    fondo2: #464141,
+);
+
+
+//Imports
 
 @import "index";
 @import "releases";
 @import "biografia";
 
+
+// MIXINS
+@mixin textformat ($pad, $fsize) {
+    padding: $pad;
+    font-size: $fsize;
+}
+
+
+
+
 //BARRA NEGRA SEPARADORA
 .barranegra{
     padding: 30px;
-    background-color: #060606;
+    // background-color:  #060606
+    background-color: map-get($coloresfondo, fondo1 );
     }
 
 
@@ -22,8 +40,9 @@ $fuente-principal: Arial, Helvetica, sans-serif;
 
 /* Estilos del FOOTER */
 footer{
-    background-color: rgb(70, 65, 65);
-}
+    // background-color: #464141;
+    background-color: map-get($coloresfondo, fondo2 );
+  }
 
 .redes{
     ul {
@@ -82,10 +101,9 @@ footer{
 
 /* EVENTOS */
 
-.titulo-eventos{
-    padding: 15px;    
-    font-family: Helvetica, sans-serif;
-    font-size: 20px;
+.titulo-eventos{    
+    @include textformat(15px,20px);
+    font-family: Helvetica, sans-serif;    
     color: $color-titulos;
     text-align: center;
 }
@@ -198,16 +216,14 @@ transition-duration: .5s;
 }
 
 #endless-road{
-    transition-property: all;
-transition-duration: .5s;
+    @extend #worlds-unseen;
 }
 #endless-road:hover {
     transform: scale(1.5);
 }
 
 #set{
-    transition-property: all;
-transition-duration: .5s;
+    @extend #worlds-unseen;
 }
 #set:hover {
     transform: scale(1.5);
@@ -215,16 +231,14 @@ transition-duration: .5s;
 
 
 #tpas2{
-    transition-property: all;
-    transition-duration: .5s;
+    @extend #worlds-unseen;
 }
 #tpas2:hover{
     transform: scale(1.5);
 }
 
 #tpas1{
-    transition-property: all;
-    transition-duration: .5s;
+    @extend #worlds-unseen;
 }
 
 #tpas1:hover{

@@ -1,9 +1,14 @@
     /* BIOGRAFIA */
 
+//Mixin
+@mixin textformat ($pad, $fsize) {
+    padding: $pad;
+    font-size: $fsize;
+}
+
     .titulobio{
-        padding: 15px;    
-        font-family: Helvetica, sans-serif;
-        font-size: 20px;
+        @include textformat (15px,20px);
+        font-family: Helvetica, sans-serif;        
         color: $color-titulos;
         text-align: center;
     }
