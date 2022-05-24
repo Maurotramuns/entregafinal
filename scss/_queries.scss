@@ -1,0 +1,27 @@
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .titulo-lateral {
+        h1{
+        font-size: 70px;
+        }
+    }
+}
+
+.grilla-eventos{
+    display: grid;
+    grid-template-areas: 
+    "mayo junio"
+    "julio agosto"
+    ;
+
+}
+
+//Fin Media Queries//

@@ -1,5 +1,10 @@
 /* Ultimos releases */
 
+.latest{
+    font-family: $fuente-principal;
+    color: $color-texto;
+    text-align: center;
+}
 
 // Usos del EXTEND
 #worlds-unseen{
@@ -16,8 +21,8 @@
     @extend #worlds-unseen;
     
 }
-.latest{
-    @extend #worlds-unseen;
-}
+
+
+
 
 

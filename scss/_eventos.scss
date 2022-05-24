@@ -1,0 +1,45 @@
+// EVENTOS //
+
+.titulo-eventos{    
+    @include textformat(15px,20px);
+    font-family: Helvetica, sans-serif;    
+    color: $color-titulos;
+    text-align: center;
+}
+
+.grilla-eventos{
+    color: $color-titulos;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "mayo"
+    "junio"
+    "julio"
+    "agosto"
+    ;
+    
+}
+
+.mayo{
+    grid-area: mayo;
+    
+}
+
+.junio{
+    grid-area: junio;
+    
+}
+
+.julio{
+    grid-area: julio;
+}
+
+.agosto{
+    grid-area: agosto;
+}
+
+.botoncompra{
+    justify-content: center;
+}
+
+// FIN EVENTOS //

@@ -1,0 +1,27 @@
+/* DISCOGRAFIA */
+
+.discografia{
+    font-family: $fuente-principal;
+    color: $color-texto;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+.releases{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    background-color: rgba(53, 54, 100, 0.288);
+    
+}
+
+.releases-2 {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: $fuente-principal;
+    text-align: center;
+    color: $color-texto;
+}
+
+//Fin Discografia//

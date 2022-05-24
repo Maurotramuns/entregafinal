@@ -1,6 +1,7 @@
                         INFORMACION META
 
 Agregadas algunas keywords en todos los archivos HTML. Tambien se agregó una description en cada uno de ellos.
+Hay Bootstrap aplicado en Grids, texto, y elementos varios.
 
                         
                         

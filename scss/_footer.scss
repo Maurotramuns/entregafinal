@@ -1,0 +1,32 @@
+/* Estilos del FOOTER */
+footer{
+    // background-color: #464141;
+    background-color: map-get($coloresfondo, fondo2 );
+  }
+
+.redes{
+    ul {
+    list-style: none;
+    padding-top: 5px;
+    justify-content: flex-start;
+    }
+}
+
+.redes{
+    ul{
+        li{
+            a{
+    text-decoration: none;
+    font-size: smaller ;     
+    color: rgb(142, 140, 143);
+            }
+        }
+    }
+}
+
+.textofooter{
+    display: flexbox;
+    justify-content: flex-end;
+    align-items: center;
+        
+    }
