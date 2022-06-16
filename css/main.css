@@ -22,9 +22,24 @@ header {
   text-align: center; }
 
 #worlds-unseen, #endless-road, #set, #tpas2, #tpas1 {
+  display: flexbox;
+  flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
   color: whitesmoke;
-  text-align: center; }
+  text-align: center;
+
+}
+
+#worlds-unseen a img{
+  width: 400px;
+}
+#endless-road a img{
+  width: 400px;
+}
+
+#set a img{
+  width: 400px;
+}
 
 /* BIOGRAFIA */
 .titulobio {
@@ -40,7 +55,10 @@ header {
   font-style: oblique;
   text-indent: 1cm;
   color: whitesmoke;
-  text-align: left; }
+  text-align: left; 
+  column
+}
+
 
 /* Estilos del FOOTER */
 footer {
@@ -77,10 +95,34 @@ footer {
 
 .releases-2 {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: whitesmoke; }
+  color: whitesmoke;
+  }
+
+#endless-road img{
+  width: 314px;
+  border: 1px solid white;
+}
+#set img{
+  width: 314px;
+  border: 1px solid white;
+}
+#worlds-unseen img{
+  width: 310px;
+  border: 1px solid white;
+}
+#tpas2 img{
+  width: 320px;
+  border: 1px solid white;
+}
+#tpas1 img{
+  width: 341px;
+  border: 1px solid white;
+}
 
 .titulo-eventos {
   padding: 15px;
@@ -93,7 +135,10 @@ footer {
   color: aliceblue;
   text-align: center;
   display: grid;
-  grid-template-areas: "mayo" "junio" "julio" "agosto"; }
+  grid-template-areas: "mayo"
+ "junio"
+ "julio"
+ "agosto"; }
 
 .mayo {
   grid-area: mayo; }
@@ -117,7 +162,12 @@ footer {
 .redes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-between;   
+}
+
+.redes a img{
+  width: 50px;
+}
 
 .formulariocontacto {
   color: whitesmoke; }
@@ -133,7 +183,8 @@ footer {
 
 .grilla-eventos {
   display: grid;
-  grid-template-areas: "mayo junio" "julio agosto"; }
+  grid-template-areas: "mayo junio"
+ "julio agosto"; }
 
 /* ANIMACIONES / TRANSICIONES */
 .foto-lateral {
